@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "distributed-example"
+version = "0.1.0"
+description = ""
+authors = ["jihoahn9303 <rediate03@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+google-api-python-client = "^2.139.0"
+google-cloud = "^0.34.0"
+google-cloud-compute = "^1.19.2"
+hydra-zen = "^0.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

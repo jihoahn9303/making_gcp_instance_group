@@ -1,0 +1,15 @@
+# @package _global_
+
+infrastructure:
+  project_id: e2eml-jiho-430901 # NOTE: Change this with your own GCP project id
+  region: us-west2
+  zone: us-west2-b
+  instance_group_creator:
+    node_count: 1
+    instance_template_creator:
+      vm_config:
+        machine_type: n1-highmem-2
+        accelerator_count: 1
+        accelerator_type: nvidia-tesla-t4
+        vm_type: SPOT
+        disks: []
